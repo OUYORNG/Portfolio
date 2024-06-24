@@ -1,6 +1,7 @@
 import React from 'react'
 import { FlipWords } from '@/components/ui/flip-words'
 import { BackgroundBeams } from '@/components/ui/background-beam';
+import Image from 'next/image';
 
 function Home() {
     const words = ["better", "cute", "beautiful", "modern"];
@@ -33,9 +34,13 @@ function Home() {
       </div>
       <div className="img text-white flex flex-grow ">
           <div>
-          <img className=' w-[500px] flex items-end z-40 justify-center
-            rounded-xl
-            ' src="/Profile.JPG" alt="" />
+              <Image
+                src='/Profile.JPG'
+                height="500"
+                width="500"
+                className=" w-[500px] flex items-end z-40 justify-center"
+                alt="thumbnail"
+              />
           </div>
       </div>
     </div>
