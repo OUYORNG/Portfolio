@@ -108,7 +108,7 @@ export const Header = () => {
         Achievement <br /> & Social Work
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-      This section will present an overview of my social volunteer experiences and accomplishments. By sharing these highlights, I aim to offer a clear picture of my background and the positive impact I've had in various communities.
+        This section will present an overview of my social volunteer experiences and accomplishments. By sharing these highlights, I aim to offer a clear picture of my background and the positive impact I've had in various communities.
       </p>
     </div>
   );
@@ -134,7 +134,7 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0 "
+      className="group/product h-80 w-[30rem] relative flex-shrink-0 "
     >
       <Link
         href={product.link}
@@ -152,9 +152,7 @@ export const ProductCard = ({
       <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
         {product.title}
       </h2>
-
-      
     </motion.div>
-    
+
   );
 };

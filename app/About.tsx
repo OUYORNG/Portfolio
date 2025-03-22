@@ -4,47 +4,47 @@ import { HoverEffect } from '../components/ui/card-hover-effect'
 import { title } from 'process'
 
 function About() {
-    const words = ['About','SKills']
+    const words = ['About','Skills']
     const projects = [
         {
-            title: "HTML CSS",
+            title: "NestJS & Laravel",
+            description:
+              "Competent",
+            link: "",
+          },
+          {
+            title: "Linux Server Deployment",
             description:
               "Intermediate",
             link: "",
           },
           {
-            title: "JAVASCRIPT",
+            title: "Liferay Portal DXP",
             description:
-              "Intermediate",
+              "Beginner",
             link: "",
           },
           {
-            title: "JAVA",
+            title: "NextJS ",
             description:
-              "Intermediate",
+              "Proficient",
             link: "",
           },
           {
-            title: "C & C++",
+            title: "VueJS, RefineJS and Svelte Kit",
             description:
-              "Moderate",
+              "Familiar",
             link: "",
           },
           {
-            title: "Git",
+            title: "Flutter",
             description:
-              "Daily uses",
-            link: "",
-          },
-          {
-            title: "Linux Experiences",
-            description:
-              "Ubuntu user",
+              "Beginner",
             link: "",
           },
     ]
   return (
-    <div className='h-[100vh]'
+    <section id='About' className='h-[100vh]'
     >
        <div className="text-2xl mx-auto font-normal text-neutral-600 dark:text-neutral-400
        md:pt-10 pl-10 pr-10 
@@ -60,7 +60,7 @@ function About() {
         <HoverEffect items={projects} />
     </div>
 
-    </div>
+    </section>
   )
 }
 
